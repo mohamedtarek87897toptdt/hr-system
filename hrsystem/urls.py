@@ -21,5 +21,5 @@ from company import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.Branches,name='Branches'),
-    path('branche/<int:branche_id>',views.BranchesDetails,name='branchesDetails'),
+    path('branche/<int:branche_id>/',views.BranchesDetails,name='branchesDetails'),
 ]
