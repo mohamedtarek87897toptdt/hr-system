@@ -1,0 +1,17 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>branche {{branche.name}}</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/bootstrap.min.css' %}">
+    <script src="{%static 'bootstrap/bootstrap.bundle.min.js'%}"></script>
+</head>
+<body>
+    <div class="container mt-5">
+     <nav aria-label="breadcrumb">
+         <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page"><a href="{% url 'Branches' %}">branches</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{branche.name}}</li>
+         </ol>
+     </nav>

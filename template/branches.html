@@ -24,7 +24,7 @@
             <tbody>
         {% for branche in branches %}
              <tr>
-                <td>{{branche.name}}<br/><small class="text-muted">{{branche.address}}</small></td>
+                <td><a href="{% url 'branchesDetails' branche.pk %}">{{branche.name}}</a><br/><small class="text-muted">{{branche.address}}</small></td>
                 <td>{%if branche.phone%}{{branche.phone}}{%endif%}</td>
                 <td>{%if branche.email%}{{branche.email}}{%endif%}</td>
                 <td>0</td>

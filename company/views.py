@@ -7,3 +7,7 @@ def Branches(request):
     b = branches.objects.all()
     return render(request,'branches.html',{'branches':b})
     
+
+def BranchesDetails(request,branche_id):
+   b = branches.objects.get(pk=branche_id)
+   return render(request,'brancheDetails.html',{'branche':b}) 
