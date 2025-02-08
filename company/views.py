@@ -12,5 +12,5 @@ def BranchesDetails(request,branche_id):
    b = branches.objects.get(pk=branche_id)
    departments = b.departmentsBranche.all()
 #    print(departments)
-   return render(request,'brancheDetails.html',{'branche':b,'departments':departments})
+   return render(request,'brancheDetails.html',{'branche':b})
    

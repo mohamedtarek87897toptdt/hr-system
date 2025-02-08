@@ -25,7 +25,7 @@
                 <th>description</th>
             </thead>
             <tbody>
-                {% for department in departments %}
+                {% for department in branche.departmentsBranche.all %}
                 <tr>
                     <td>{{department.name}}</td>
                     <td>{{department.description}}</td>
